@@ -10,7 +10,7 @@ public class Student extends Person {
     super(newName, newAge);
         
     if(newStudentGPA < 0 || newStudentGPA > 5){
-        throw new InvalidGPAException("Invalid GPA");
+        throw new InvalidGPAException("Invalid GPA! GBA must be between 0 and 5.");
     } 
         studentID = newStudentID;
         studentGPA = newStudentGPA;
