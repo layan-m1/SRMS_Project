@@ -5,15 +5,17 @@ public class Student extends Person {
     private Department studentDepartment;
 
     // Constructor
-    public Student(String newName,  int newAge,   int newStudentID,  double newStudentGPA,  Department newDepartment) {
-
-        super(newName, newAge);
-
+    public Student(String newName,  int newAge,   int newStudentID,  double newStudentGPA,  Department newDepartment)
+    throws InvalidGPAException {
+    super(newName, newAge);
+        
+    if(newStudentGPA < 0 || newStudentGPA > 5){
+        throw new InvalidGPAException("Invalid GPA");
+    } 
         studentID = newStudentID;
         studentGPA = newStudentGPA;
         studentDepartment = newDepartment;
     }
-
     // Getters
     public int getStudentID() {
         return studentID;
