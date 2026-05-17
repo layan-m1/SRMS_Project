@@ -18,7 +18,7 @@ public class Main {
             student.displayInfo();
 
         }
-        catch(InvalidGPAException e){
+        catch (InvalidGPAException e){
 
             System.out.println(e.getMessage());
         }
