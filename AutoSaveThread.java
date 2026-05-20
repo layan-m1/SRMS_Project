@@ -1,6 +1,6 @@
 public class AutoSaveThread extends Thread {
     
-    private StudentManager manager;
+    private  final StudentManager manager;
     
 
     // Constructor to link this thread with the main manager
