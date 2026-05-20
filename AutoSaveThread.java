@@ -1,6 +1,7 @@
 public class AutoSaveThread extends Thread {
     
     private StudentManager manager;
+    
 
     // Constructor to link this thread with the main manager
     public AutoSaveThread(StudentManager manager) {
@@ -17,7 +18,7 @@ public class AutoSaveThread extends Thread {
                 // Call the save method from the main system
                 if (manager != null) {
                     manager.saveToFile(); 
-                    System.out.println("\n[Auto-Save]: Student records saved successfully in the background.");
+                    System.out.println("\n Auto-Save: Student records saved successfully in the background.");
                 }
             }
         } catch (InterruptedException e) {

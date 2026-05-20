@@ -1,7 +1,7 @@
 public class ReportThread extends Thread {
     
-    private StudentManager manager;
-    private String criteria; 
+    private final StudentManager manager;
+    private final String criteria; 
 
     // Constructor to initialize the thread with the manager and criteria
     public ReportThread(StudentManager manager, String criteria) {
@@ -11,7 +11,7 @@ public class ReportThread extends Thread {
 
     @Override
     public void run() {
-        System.out.println("\n[System]: Preparing report in the background... Please wait.");
+        System.out.println("\n System: Preparing report in the background... Please wait.");
         
         try {
             // Sleep for 2 seconds to simulate the time taken to process large data
@@ -20,7 +20,7 @@ public class ReportThread extends Thread {
             if (manager != null) {
                 // Call the report generation method from the main system
                 manager.generateReport(criteria); 
-                System.out.println("\n[System]: Report generated successfully.");
+                System.out.println("\n System: Report generated successfully.");
             }
             
         } catch (InterruptedException e) {
