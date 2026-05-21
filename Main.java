@@ -20,7 +20,7 @@ public class Main {
                     dept
             );
 
-            // Add Student
+            // Add Student.
             manager.addStudent(student);
 
             // Student Information Display
