@@ -1,4 +1,9 @@
 # SRMS_Project
+# Student Record Management System (SRMS)
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/layan-m1/SRMS_Project)
+
+A robust, terminal-based Java application designed for universities to manage student records efficiently. The system utilizes Core Java concepts...
 Student Record Management System (SRMS)
 A robust, terminal-based Java application designed for universities to manage student records efficiently. The system utilizes Core Java concepts, Object-Oriented Programming (OOP) principles, Exception Handling, File I/O, and Multithreading to handle dynamic data streams, auto-save operations, and filtered academic reporting across multiple departments.
 
